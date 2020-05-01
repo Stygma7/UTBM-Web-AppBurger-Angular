@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ApiModule } from './API';
+import { ApiModule } from './Swagger';
 import { HttpClientModule } from '@angular/common/http';
+import { BurgerComponent } from './burger/burger.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule,
