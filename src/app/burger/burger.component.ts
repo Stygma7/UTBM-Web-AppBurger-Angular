@@ -12,6 +12,7 @@ export class BurgerComponent implements OnInit {
   constructor(private burgerService: BurgersService) { }
 
   ngOnInit() {
+    this.getBurgers();
   }
 
   // getHeroes(): void {
