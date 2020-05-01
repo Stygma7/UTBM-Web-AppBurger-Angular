@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BurgersService } from '../Swagger';
+import { BurgersService, Burger } from '../Swagger';
 
 @Component({
   selector: 'app-burger',
@@ -7,7 +7,7 @@ import { BurgersService } from '../Swagger';
   styleUrls: ['./burger.component.css']
 })
 export class BurgerComponent implements OnInit {
-  burgers: any;
+  burgers: Burger[];
 
   constructor(private burgerService: BurgersService) { }
 
@@ -15,10 +15,8 @@ export class BurgerComponent implements OnInit {
     this.getBurgers();
   }
 
-  // getHeroes(): void {
-  //   this.heroes = this.heroService.getHeroes();
-  // }
   getBurgers(): void {
-    this.burgers = this.burgerService.listBurgers();
+    this.burgerService.listBurgers()
+    .subscribe(burgers => this.burgers = burgers);
   }
 }
