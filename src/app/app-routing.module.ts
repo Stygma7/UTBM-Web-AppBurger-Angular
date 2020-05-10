@@ -5,7 +5,7 @@ import { BurgerDetailsComponent } from './burger-details/burger-details.componen
 
 
 const routes: Routes = [
-  { path: 'burgers', component: BurgerComponent },
+  { path: '', component: BurgerComponent },
   { path: 'details/:id', component: BurgerDetailsComponent }
 ];
 
