@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ApiModule } from './Swagger';
 import { HttpClientModule } from '@angular/common/http';
 import { BurgerComponent } from './burger/burger.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { BurgerComponent } from './burger/burger.component';
     BrowserModule,
     AppRoutingModule,
     ApiModule,
-    HttpClientModule 
+    HttpClientModule,
+    NoopAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
