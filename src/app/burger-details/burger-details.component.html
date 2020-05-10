@@ -1,3 +1,15 @@
-<p>burger-details works!</p>
+<div>
+    <mat-card class="burger-card">
+        <mat-card-header>
+        <mat-card-title>Burger n° {{burger.id}} : {{burger.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{burger.image}}">
+        <mat-card-content>
+        <p> Prix : {{burger.price}}€ </p>
+        <p> Nutriscore : {{burgerDetail.nutriscore}}€ </p>
+        <p> Nutriments : {{burgerDetail.nutriments}}€ </p>
+        </mat-card-content>
+    </mat-card>
+</div>
 
-<button (click)="goBack()">go back</button>
+<a mat-raised-button color="Basic" (click)="goBack()">Retour</a>

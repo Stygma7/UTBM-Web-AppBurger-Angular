@@ -1,10 +1,4 @@
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-    <img
-      width="40"
-      alt="Burger Logo"
-      src="https://i.pinimg.com/originals/a9/62/0e/a9620e76f19433f4aa6e8935d3cc1734.png"
-    />
+<div>
     <h1>Burgers</h1>
 </div>
 
@@ -12,7 +6,7 @@
     <ul class="burgers">
         <span *ngFor="let burger of burgers">
 
-            <mat-card class="example-card">
+            <mat-card class="burger-card">
                 <mat-card-header>
                 <mat-card-title>{{burger.name}}</mat-card-title>
                 </mat-card-header>
@@ -21,7 +15,7 @@
                 <p> Prix : {{burger.price}}€ </p>
                 </mat-card-content>
                 <mat-card-actions>
-                <button mat-button routerLink="/details/{{burger.id}}">Détails </button>
+                <a mat-raised-button color="Warn" routerLink="/details/{{burger.id}}">Détails </a>
                 </mat-card-actions>
             </mat-card>
         </span>
