@@ -20,7 +20,9 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     ApiModule,
     HttpClientModule,
-    NoopAnimationsModule 
+    NoopAnimationsModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
