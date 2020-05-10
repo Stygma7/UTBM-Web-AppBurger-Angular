@@ -3,24 +3,18 @@
 
         <mat-card class="example-card">
             <mat-card-header>
-              <mat-card-title>{{burger.image}}</mat-card-title>
+              <mat-card-title>{{burger.name}}</mat-card-title>
             </mat-card-header>
             <img mat-card-image src="{{burger.image}}" width="400" alt="Photo of a Burger">
             <mat-card-content>
               <p>
                 Le meilleur burger.
+                {{burger.price}}€
               </p>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button>Détails</button>
             </mat-card-actions>
         </mat-card>
-
-        <p>{{burger.id}} {{burger.name}}</p>
-        <img
-            src="{{burger.image}}"
-            width="500"
-        />
-        <p>{{burger.price}}€</p>
     </li>
 </ul>
