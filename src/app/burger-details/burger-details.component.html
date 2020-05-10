@@ -6,8 +6,9 @@
         <img mat-card-image src="{{burger.image}}">
         <mat-card-content>
         <p> Prix : {{burger.price}}€ </p>
-        <p> Nutriscore : {{burgerDetail.nutriscore}}€ </p>
-        <p> Nutriments : {{burgerDetail.nutriments}}€ </p>
+        <p> Nutriscore : {{burger.nutriscore}}€ </p>
+        <p> Energie (kCal) : {{burger.nutriments['energy-kcal']}} </p>
+        <p> Graisses saturées : {{burger.nutriments['saturated-fat']}} </p>
         </mat-card-content>
     </mat-card>
 </div>

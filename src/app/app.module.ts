@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { ApiModule } from './Swagger';
 import { HttpClientModule } from '@angular/common/http';
 import { BurgerComponent } from './burger/burger.component';
+import { BurgerDetailsComponent } from './burger-details/burger-details.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { BurgerDetailsComponent } from './burger-details/burger-details.component';
 
 @NgModule({
   declarations: [
