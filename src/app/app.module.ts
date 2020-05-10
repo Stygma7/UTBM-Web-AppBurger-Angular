@@ -9,11 +9,13 @@ import { BurgerComponent } from './burger/burger.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { BurgerDetailsComponent } from './burger-details/burger-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BurgerComponent
+    BurgerComponent,
+    BurgerDetailsComponent
   ],
   imports: [
     BrowserModule,
